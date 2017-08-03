@@ -17,14 +17,14 @@ Gem::Specification.new do |s|
   s.files      = `git ls-files`.split($\)
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
-  s.add_dependency "rails", "~> 4.0"
+  s.add_dependency "rails", ">= 4.0"
   s.add_dependency "pagarme", "2.1.4"
   #s.add_dependency "pagarme", "1.10.0"
   s.add_dependency "weekdays", ">= 1.0.2"
   s.add_dependency "sidekiq"
   s.add_dependency "sentry-raven"
 
-  s.add_development_dependency "rspec-rails", "~> 3.3"
+  s.add_development_dependency "rspec-rails", "~> 3.6"
   s.add_development_dependency "factory_girl_rails"
   s.add_development_dependency "pg"
   s.add_development_dependency "database_cleaner"
